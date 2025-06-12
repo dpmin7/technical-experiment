@@ -1,4 +1,4 @@
-# Experiment 4: Collision avoidance
+# Experiment 4: Operational Load Experiment for Aircraft Distance Calculations
  
 
 ## Results and recommendations 
@@ -12,7 +12,7 @@ Implement an algorithm to calculate the distance between aircraft for aircraft c
 [Planned]
 
 ## Expected outcomes
-- Time required to calculate distance between aircrafts (when using C++ language).
+- Time(Load) required to calculate distance between aircrafts.
 
 ## Resources required
  - C++ build enviroment
@@ -21,7 +21,7 @@ Implement an algorithm to calculate the distance between aircraft for aircraft c
  - Aircraft position logging data
 
 ## Experiment description
-- experiment with a function that calculates the distance using latitude, longitude, and altitude data of two aircraft.
+- experiment with a function that calculates the distance using latitude, longitude, and altitude data of aircrafts(between one aircraft and Others).
 - Perform distance calculation experiments for all aircraft using recorded aircraft data.
 - Design a filter to exclude aircraft for which distance calculation is not necessary.
 - Measure the time taken to calculate distances for all aircraft
