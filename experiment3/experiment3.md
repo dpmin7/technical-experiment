@@ -2,44 +2,46 @@
  
 
 ## Results and recommendations 
-TO-DO: record here the partial or final conclusions and results of the technical experiment. 
+Evaluation of the feasibility and suitability of C#/WPF-based implementation. 
+Decision to adopt or not will be made based on the results.
 
 ## Objective 
-TO-DO: describe here the objectives that motivated this technical experiment. Usually, a design decision will be made based on the results of the experiment. 
-Explain what decision that is and what system(s) will be affected. Hint: try to articulate the objective as a technical question that you need to answer. 
-Example: what is the minimum bandwidth for my app to stream video at 25 fps on HD? 
+ - Verify if we can build the main features at the same level as exist system with C#/WPF.
+ - Verify that performance (rendering performance, data processing performance) is equivalent to or better than the existing system.
 
 ## Status
-[Planned | In progress | Suspended | Canceled | Concluded]
-
-*Add different statuses as you see fit.* 
+In progress
 
 ## Expected outcomes
-TO-DO: list the deliverables that the experiment is expected to produce. Examples: 
- - executable, functional prototype
- - presentation to the team
- - report/table comparing 2+ technologies/products/design alternatives
+ - A working C#/WPF prototype
+ - Comparative report vs. existing implementation (functionality / performance / development convenience, etc.)
+ - List of problems found and how we solved them
+ - Simple sharing for the team
 
 ## Resources required
-TO-DO: list the resources that are required to execute the experiment. They may include, for example: 
- - software tools or frameworks
- - product documentation or other reading materials 
- - effort in person-days
- - machines, VMs, or other hardware elements
- - access to computational resources
- - dedicated space in a database
+ - Visual Studio 2022
+ - .NET Framework 4.7.2
+ - WPF Framework
+ - OpenGL or a similar library
+ - Current source code to study
+ - ChatGPT — for help with understanding code, converting to C#, finding libraries, writing sample code
+ - About 5 person-days
+ - Windows PC
 
 ## Experiment description
-TO-DO: describe how do you intend to execute the experiment. It can be, for example, a sequence of activities to perform.
-Activities may include, for example:
- - research on the Internet for alternatives
- - studying the documentation of a tool/framework
- - creating the code of a prototype
- - running tests/benchmarks
+ - Study the current C++/Embarcadero code
+ - Make and test each part:
+   - UI
+   - TCP communication
+   - Data parsing and handling
+   - Map tile display
+   - OpenGL rendering
+ - Do full tests and measure performance
+ - Compare with the current version
+ - Write and share the final results
 
 ## Duration
-TO-DO: indicate the deadline for concluding the experiment. Be realistic and make meeting the deadline a goal. If appropriate, 
-indicate intermediary milestones. 
+TO-DO: write the end date for this experiment.
 
 ## Links and references
 TO-DO: list here publications, web pages, etc. that contain information relevant to the experiment. 
