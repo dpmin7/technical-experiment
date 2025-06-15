@@ -3,10 +3,11 @@
 ## Results and recommendations
 
 1.   Set a polygon area and experiment to see if 10,000 points are included within the polygon (data is converted to ENU coordinate system based on latitude, longitude, and altitude data, and then filtered)
-	- c# :   It takes about 7msec
-	- c++ : It takes about 0.5msec
-	- The C++ implementation is approximately 14 times faster than the C# implementation in this test case
-	- It is recommended to implement the functionality in C# for integration into the project, and to provide a C++ version as a DLL when higher performance is required.
+
+-  c# :   It takes about 7msec
+- c++ : It takes about 0.5msec
+- The C++ implementation is approximately 14 times faster than the C# implementation in this test case
+- It is recommended to implement the functionality in C# for integration into the project, and to provide a C++ version as a DLL when higher performance is required.
 
 ## Objective
 
@@ -17,9 +18,7 @@
 
 ## Status
 
-In progress
-- 
-
+- In progress
 ## Expected outcomes
 
 - Measurement results of processing time based on the number of aircraft and the complexity of the polygons
