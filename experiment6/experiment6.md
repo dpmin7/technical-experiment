@@ -2,7 +2,11 @@
 
 ## Results and recommendations
 
-TBD
+1.   Set a polygon area and experiment to see if 10,000 points are included within the polygon (data is converted to ENU coordinate system based on latitude, longitude, and altitude data, and then filtered)
+	- c# :   It takes about 7msec
+	- c++ : It takes about 0.5msec
+	- The C++ implementation is approximately 14 times faster than the C# implementation in this test case
+	- It is recommended to implement the functionality in C# for integration into the project, and to provide a C++ version as a DLL when higher performance is required.
 
 ## Objective
 
@@ -14,6 +18,7 @@ TBD
 ## Status
 
 In progress
+- 
 
 ## Expected outcomes
 
@@ -26,22 +31,23 @@ In progress
 ## Resources required
 
 - 1 person for 5 days
-- Sample aircraft position data (based on latitude/longitude)
+- Sample aircraft position data
 - Sample polygon area definitions
 - Python development environment
 - C++/C# development environment
 
 ## Experiment description
 
-- Analysis of the provided code
-
-- Research algorithms and libraries on the Internet
-- Research SBS data format and extract sample data
-- Create prototype code (in Python)
-- Test basic functionality
-- Collect aircraft data and create test cases
-- Test the code
-- Document the results and write the report
+- [x] Analysis of the provided code
+- ~~Research algorithms and libraries on the Internet~~
+	- Code is in the provided code(c++)
+- [x] Create prototype python code
+- [x] Test basic functionality (using x,y not longitude, latitude)
+- [x] Create c++ and c# code and test.
+- [x] Test code using longitude, latitude data
+- [ ] Collect aircraft data and create test cases
+- [ ] Test the code
+- [ ] Document the results
 
 ## Duration
 
