@@ -1,4 +1,4 @@
-# Experiment 1: SDR and antennae connection recovery experiment
+# Experiment 1: SDR and antenna connection recovery experiment
 
 ## Results and recommendations
 As of the initial phase of the experiment, it has been confirmed that when the SDR and antenna are physically connected and functioning properly, the `dump1090` program runs without error and successfully feeds data to ADSBHub.  
