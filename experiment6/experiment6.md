@@ -13,7 +13,7 @@
 	- Modified to filter only aircraft within the polygon using latitude and longitude directly, without coordinate transformation
 	- Functionality confirmed to work as intended
 	
-<img width="812" alt="Image" src="https://github.com/user-attachments/assets/faec9dff-b658-41ba-ab95-8379536d5a2f" />
+<img width="812" alt="Image" src="https://github.com/user-attachments/assets/fde2197a-3681-4606-af4d-e858b5beda50" />
 
 
 ## Objective
