@@ -1,45 +1,52 @@
-# Experiment N: brief title of the experiment 
+# Experiment 2: Tracker, Network Connection Recovery Experiment 
  
 
 ## Results and recommendations 
-TO-DO: record here the partial or final conclusions and results of the technical experiment. 
+TO-DO: After the experiment is completed, record the accuracy of network disconnection detection and recovery time. 
+Provide recommendations based on the results that may influence the system design.
 
 ## Objective 
-TO-DO: describe here the objectives that motivated this technical experiment. Usually, a design decision will be made based on the results of the experiment. 
-Explain what decision that is and what system(s) will be affected. Hint: try to articulate the objective as a technical question that you need to answer. 
-Example: what is the minimum bandwidth for my app to stream video at 25 fps on HD? 
+This experiment aims to verify whether network disconnection can be effectively detected using ping/echo methods and whether the system can recover and return to a normal state within 1 minute after reconnection.
+The results will impact the following design decisions:
+
+- Failure detection and failover logic design
+- Network recovery timer configuration
+- User notification policies
+  The main technical questions to answer are:
+  "Can a ping or echo request-based monitoring method detect network disconnection within 10 seconds?"
+  "When the network is restored, does the system recover within 1 minute?"
 
 ## Status
-[Planned | In progress | Suspended | Canceled | Concluded]
-
-*Add different statuses as you see fit.* 
+[Planned]
 
 ## Expected outcomes
-TO-DO: list the deliverables that the experiment is expected to produce. Examples: 
- - executable, functional prototype
- - presentation to the team
- - report/table comparing 2+ technologies/products/design alternatives
+- Logs of state changes during disconnection and recovery scenarios
+- Monitoring logs using ping/echo requests
+- Report on detection and recovery time measurements
+- Summary report (in PDF or tabular format)
+- Presentation for internal design discussion
 
 ## Resources required
-TO-DO: list the resources that are required to execute the experiment. They may include, for example: 
- - software tools or frameworks
- - product documentation or other reading materials 
- - effort in person-days
- - machines, VMs, or other hardware elements
- - access to computational resources
- - dedicated space in a database
+- Two test devices (Sender and Receiver roles)
+- ICMP-based ping tools
+- One engineer for 2 person-days
+- Dedicated test network environment
 
 ## Experiment description
-TO-DO: describe how do you intend to execute the experiment. It can be, for example, a sequence of activities to perform.
-Activities may include, for example:
- - research on the Internet for alternatives
- - studying the documentation of a tool/framework
- - creating the code of a prototype
- - running tests/benchmarks
+1. Set up a test environment with two devices sending ICMP ping requests at regular intervals.
+2. Log ping responses during normal operation.
+3. Manually disconnect the network (unplug LAN cable).
+4. Measure the time taken to detect disconnection (based on ping response failures).
+5. Reconnect the network after a predefined period.
+6. Confirm whether normal operation resumes and measure the recovery time.
+7. Repeat the test under various conditions (e.g., different disconnection durations, ping intervals).
+8. Collect results and perform comparative analysis.
 
 ## Duration
-TO-DO: indicate the deadline for concluding the experiment. Be realistic and make meeting the deadline a goal. If appropriate, 
-indicate intermediary milestones. 
+- Total experiment duration: 2 days
+- Day 1: Test setup and initial scenario runs
+- Day 2: Repeat tests under varying conditions and analyze logs
 
 ## Links and references
-TO-DO: list here publications, web pages, etc. that contain information relevant to the experiment. 
+- RFC 792 - ICMP Protocol Specification
+- Linux ping manual
