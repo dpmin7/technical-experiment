@@ -9,9 +9,9 @@
 	- The C++ implementation is approximately 14 times faster than the C# implementation in this test case
 	- It is recommended to implement the functionality in C# for integration into the project, and to provide a C++ version as a DLL when higher performance is required.
 
-- 프로젝트에 적용하여 기능 시험 완료
-	- 좌표 변환 없이 위도, 경도를 이용하여 다각형 내 항공기만 필터링 하는 것으로 변경하어 적용
-	- 기능 수행 확인
+- Applied to the project and functionality tested successfully.
+	- Modified to filter only aircraft within the polygon using latitude and longitude directly, without coordinate transformation
+	- Functionality confirmed to work as intended
 	
 <img width="812" alt="Image" src="https://github.com/user-attachments/assets/faec9dff-b658-41ba-ab95-8379536d5a2f" />
 
