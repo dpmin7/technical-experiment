@@ -45,3 +45,19 @@ TO-DO: write the end date for this experiment.
 
 ## Links and references
 TO-DO: list here publications, web pages, etc. that contain information relevant to the experiment. 
+
+## Results
+Step 1.
+ - User Interface (UI):
+   Basic window layout and interaction elements were created using WPF.
+   Functionality equivalent to the existing system’s UI has been achieved for the tested parts.
+
+ - TCP Communication:
+   TCP client implementation is working as expected.
+   Successfully connects to the server, receives streaming data, and handles connection state.
+
+ - Data Parsing and Handling:
+   Implemented a data parser that processes incoming TCP messages.
+   Verified the correctness of parsing and real-time message handling logic.
+
+![Image](https://github.com/user-attachments/assets/e2d1b15c-4611-4cc2-889d-9546ae1bfa81)
