@@ -41,10 +41,11 @@ Concluded
  - Write and share the final results
 
 ## Duration
-TO-DO: write the end date for this experiment.
-
-## Links and references
-TO-DO: list here publications, web pages, etc. that contain information relevant to the experiment. 
+ - Start date: 2025-06-9
+ - Step 1: 2025-06-11
+ - Step 2: 2025-06-13
+ - Step 3: 2025-06-17
+ - Target end date: 2025-06-17
 
 ## Results
 Step 1.
