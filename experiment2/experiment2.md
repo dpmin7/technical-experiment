@@ -2,8 +2,8 @@
  
 
 ## Results and recommendations 
-TO-DO: After the experiment is completed, record the accuracy of network disconnection detection and recovery time. 
-Provide recommendations based on the results that may influence the system design.
+- 1. Tried to check if the server is alive using ICMP Request(ping), but the server did't respond.
+-> Plan to check using TCP connection attempt.
 
 ## Objective 
 This experiment aims to verify whether network disconnection can be effectively detected using ping/echo methods and whether the system can recover and return to a normal state within 1 minute after reconnection.
@@ -17,7 +17,7 @@ The results will impact the following design decisions:
   "When the network is restored, does the system recover within 1 minute?"
 
 ## Status
-[Planned]
+[In Progress]
 
 ## Expected outcomes
 - Logs of state changes during disconnection and recovery scenarios
