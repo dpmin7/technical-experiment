@@ -60,4 +60,9 @@ Step 1.
    Implemented a data parser that processes incoming TCP messages.
    Verified the correctness of parsing and real-time message handling logic.
 
-![Image](https://github.com/user-attachments/assets/e2d1b15c-4611-4cc2-889d-9546ae1bfa81)
+   ![Image](https://github.com/user-attachments/assets/e2d1b15c-4611-4cc2-889d-9546ae1bfa81)
+
+Step 2.
+ - OpenGL rendering
+   we experimented with OpenGL rendering by applying OpenTK, one of the available options for OpenGL integration in WPF, and tested rendering functionality.
+   ![Image](https://github.com/user-attachments/assets/40dd4195-7df4-4171-a4e8-b2c08fc36ecd)
