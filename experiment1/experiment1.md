@@ -13,7 +13,7 @@
  - Identify and analyze potential performance degradation when rendering more than 10,000 objects on the screen, and assess its impact on overall system behavior.
 
 ## Status
-[In progress]
+[Concluded]
 
 ## Expected outcomes
  - Quantitative performance metrics depending on the number of rendered objects  
@@ -34,8 +34,7 @@
  - [O] Tested basic functionality (Object display confirmation)
  - [O] Developed and tested C# code
  - [O] Measured rendering performance based on OpenGL display method (Performance vs. number of objects)
- ### Pending:
- - [ ] Document the results
+ - [O] Document the results
 
 ## Duration
  - Deadline: 2025-06-17  
