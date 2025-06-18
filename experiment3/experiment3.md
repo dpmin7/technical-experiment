@@ -10,7 +10,7 @@ Decision to adopt or not will be made based on the results.
  - Verify that performance (rendering performance, data processing performance) is equivalent to or better than the existing system.
 
 ## Status
-In progress
+Concluded
 
 ## Expected outcomes
  - A working C#/WPF prototype
@@ -65,4 +65,17 @@ Step 1.
 Step 2.
  - OpenGL rendering
    we experimented with OpenGL rendering by applying OpenTK, one of the available options for OpenGL integration in WPF, and tested rendering functionality.
+   
    ![Image](https://github.com/user-attachments/assets/40dd4195-7df4-4171-a4e8-b2c08fc36ecd)
+
+Step 3.
+ - Map tile and aircraft display
+   we tested map rendering and successfully displayed both the map and aircraft.
+   Rendering performance was also measured to be comparable to the existing system.
+   
+   ![Image](https://github.com/user-attachments/assets/c624cec8-1802-4471-9e39-4965c329f42b)
+
+
+## Final result :
+   With the successful implementation and verification of UI, TCP communication, data handling, OpenGL rendering, and map rendering, this experiment has achieved its primary goals.
+   The prototype demonstrates that a C#/WPF-based system is a feasible alternative to the existing implementation.
