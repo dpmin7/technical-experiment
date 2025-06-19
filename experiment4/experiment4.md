@@ -1,35 +1,60 @@
-# Experiment 4: Operational Load Experiment for Aircraft Distance Calculations
- 
+# # Experiment 4: Operational Load Experiment for Aircraft CPA Calculation
 
-## Results and recommendations 
-TO-DO: record here the partial or final conclusions and results of the technical experiment. 
+## Results and Recommendations
 
-## Objective 
-Implement an algorithm to calculate the distance between aircraft for aircraft collision avoidance. Perform calculations for two selected aircraft and measure the calculation time. Also, perform calculations for all aircraft currently receiving data and measure the calculation time. Based on the results, decide the level of content to apply to the project.
+- TBD
+    
+
+## Objective
+
+Implement a distance calculation algorithm for aircraft collision avoidance.  
+Calculate the CPA (Closest Point of Approach) distance and time between two selected aircraft and measure the computation time.  
+Also, perform CPA calculations between all currently received aircraft and measure the total computation time.  
+Based on the results, explore ways to reduce processing time and establish an application strategy for the project.
 
 ## Status
 
-[Planned]
+- [In progress]
+    
 
-## Expected outcomes
-- Time(Load) required to calculate distance between aircrafts.
+## Expected Outcomes
 
-## Resources required
- - C++ build enviroment
- - 1 Person, 5 days 
- - 1 laptop
- - Aircraft position logging data
+- Processing time (load) required to calculate CPA distance and time between aircraft
+    
+- CPA calculation source code for aircraft
+    
 
-## Experiment description
-- experiment with a function that calculates the distance using latitude, longitude, and altitude data of aircrafts(between one aircraft and Others).
-- Perform distance calculation experiments for all aircraft using recorded aircraft data.
-- Design a filter to exclude aircraft for which distance calculation is not necessary.
-- Measure the time taken to calculate distances for all aircraft
+## Resources Required
 
-## Duration
-- Acquire data by June 11th.
-- Perform the experiment by June 13th.
-- Derive results by June 15th.
+- C++ / C# build environment
+    
+- 1 person, 5 days
+    
+- 1 laptop
+    
+- Logged aircraft position data
+    
 
-## Links and references
- 
+## Experiment Description
+
+- Test a function that calculates the CPA distance and time between two aircraft using latitude, longitude, and altitude data.
+    
+- Use recorded aircraft data to perform CPA calculations across all aircraft.
+    
+- Design a filter to exclude aircraft for which distance calculation is unnecessary.
+    
+- Measure the total time required for all aircraft CPA calculations.
+    
+
+## Schedule
+
+- Acquire aircraft data by June 18
+    
+- Conduct the experiment by June 20
+    
+- Derive results by June 21
+    
+
+## Links and References
+
+To be added if necessary

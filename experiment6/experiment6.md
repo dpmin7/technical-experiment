@@ -28,8 +28,7 @@
 - Concluded
 ## Expected outcomes
 
-- Measurement results of processing time based on the number of aircraft and the complexity of the polygons
-- Test cases for the experiment
+- Measurement results of processing time based on the number of aircraft and the complexity of the polygons(in different programming languages)
 - Filtering module code:
   - Python code (for this experiment)
   - C++ or C# code (for integration into the final application)
