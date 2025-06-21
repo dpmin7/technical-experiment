@@ -3,11 +3,13 @@
 
 ## Results and recommendations 
  - Ensure the system maintains optimal rendering performance when displaying over 10,000 objects, without degrading responsiveness or affecting other system operations.
-   typical way : 0.211s
-   code base : 0.077s
-   Vertex Buffer Object (VBO) : 0.062s
+
+   typical way : 0.211s  
+   code base : 0.077s  
+   Vertex Buffer Object (VBO) : 0.062s  
    instanced rendering : 0.063s
-   Among the four evaluated approaches, the Vertex Buffer Object (VBO) method and instanced rendering demonstrated the best performance. 
+   
+   Among the four evaluated approaches, the Vertex Buffer Object (VBO) method and instanced rendering demonstrated the best performance.  
    Given that the performance difference between the two was negligible, the VBO method was selected for implementation due to its relatively simpler integration and lower development complexity.
 
 ## Objective 
