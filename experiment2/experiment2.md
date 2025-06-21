@@ -2,8 +2,13 @@
  
 
 ## Results and recommendations 
-- 1. Tried to check if the server is alive using ICMP Request(ping), but the server did't respond.
--> Plan to check using TCP connection attempt.
+- 1. Tried to check if the server is alive using ICMP Request(ping), but the server did't respond. -> we can not use ICMP Request.
+- 2. Network disconnection and reconnection were detected through TCP connection attempts.
+     Connectivity with the ADS-B Hub and the local server was verified every 10 seconds using TCP connection attempts. 
+	 (A 10-second interval was used for the ADS-B Hub to prevent potential problems that could arise from frequent TCP connection attempts.)
+	 For the Raspberry Pi, TCP connection attempts were performed every 2 seconds.
+- 3. Test for Detecting Internet Disconnection and Reconnection: All 50 out of 50 test attempts were successful.
+     Test for USB Disconnection between the Raspberry Pi and the SDR: All 50 out of 50 test attempts were successful.
 
 ## Objective 
 This experiment aims to verify whether network disconnection can be effectively detected using ping/echo methods and whether the system can recover and return to a normal state within 1 minute after reconnection.
@@ -13,16 +18,15 @@ The results will impact the following design decisions:
 - Network recovery timer configuration
 - User notification policies
   The main technical questions to answer are:
-  "Can a ping or echo request-based monitoring method detect network disconnection within 10 seconds?"
+  "Can a ping or echo request-based monitoring method detect network disconnection within 20 seconds?"
   "When the network is restored, does the system recover within 1 minute?"
 
 ## Status
-[In Progress]
+[Done]
 
 ## Expected outcomes
 - Logs of state changes during disconnection and recovery scenarios
 - Monitoring logs using ping/echo requests
-- Report on detection and recovery time measurements
 - Summary report (in PDF or tabular format)
 - Presentation for internal design discussion
 
