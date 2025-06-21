@@ -1,4 +1,4 @@
-# Experiment 1: SDR and antenna connection recovery experiment
+# Experiment 5: SDR and antenna connection recovery experiment
 
 ## Results and recommendations
 The experiment has been concluded successfully.
