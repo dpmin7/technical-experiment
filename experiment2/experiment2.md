@@ -22,7 +22,7 @@ The results will impact the following design decisions:
   "When the network is restored, does the system recover within 1 minute?"
 
 ## Status
-[Done]
+[Concluded]
 
 ## Expected outcomes
 - Logs of state changes during disconnection and recovery scenarios
