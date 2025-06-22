@@ -2,7 +2,10 @@
  
 
 ## Results and recommendations 
- - Ensure the system maintains optimal rendering performance when displaying over 10,000 objects, without degrading responsiveness or affecting other system operations.
+ - An initial analysis showed no significant link between FPS and UI performance.   
+   We are therefore shifting our plan to target direct rendering optimizations to achieve tangible improvements in UI responsiveness.
+ 
+   Ensure the system maintains optimal rendering performance when displaying over 10,000 objects, without degrading responsiveness or affecting other system operations.
 
    Among the four approaches, the Vertex Buffer Object (VBO) method and instanced rendering are expected to deliver the best performance.  
    However, since instanced rendering cannot be applied at our current implementation level of OpenGL 2.x, we decided to exclude the instanced rendering approach.
