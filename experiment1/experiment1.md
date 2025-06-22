@@ -4,13 +4,13 @@
 ## Results and recommendations 
  - Ensure the system maintains optimal rendering performance when displaying over 10,000 objects, without degrading responsiveness or affecting other system operations.
 
+   Among the four approaches, the Vertex Buffer Object (VBO) method and instanced rendering are expected to deliver the best performance.  
+   However, since instanced rendering cannot be applied at our current implementation level of OpenGL 2.x, we decided to exclude the instanced rendering approach.
+
    typical way : 0.211s  
-   code base : 0.077s  
+   code base(Immediate Mode) : 0.077s  
    Vertex Buffer Object (VBO) : 0.062s  
-   instanced rendering : 0.063s
-   
-   Among the four evaluated approaches, the Vertex Buffer Object (VBO) method and instanced rendering demonstrated the best performance.  
-   Given that the performance difference between the two was negligible, the VBO method was selected for implementation due to its relatively simpler integration and lower development complexity.
+   <s>instanced rendering : -s</s>
 
 ## Objective 
  - Identify and analyze potential performance degradation when rendering more than 10,000 objects on the screen, and assess its impact on overall system behavior.
