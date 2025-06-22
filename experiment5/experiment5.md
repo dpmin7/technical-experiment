@@ -10,6 +10,9 @@ The experiment has been concluded successfully.
 - When a fault is detected, the script stops both `dump1090` and the ADSBHub feeding script.
 - While the hardware is disconnected, `systemd` continues attempting to restart `dump1090`, but it fails as expected.
 - Once the hardware connection is restored, the system automatically recovers: `dump1090` and the feeding script restart and resume operation successfully.
+- To validate recovery robustness, the SDR antenna was manually disconnected and reconnected **50 times**, and in all 50 cases the system successfully detected the change and fully recovered.
+- Additionally, the Raspberry Pi was rebooted **50 times** to test system initialization. Only **one** failure occurred, and the root cause was determined to be a general Raspbian OS boot hang, **unrelated to the SDR or our recovery tactic**.
+- These results confirm the reliability and resilience of the proposed tactic for SDR failure detection and recovery.
 - The interaction and timing among `systemd`, `dump1090`, the ADSBHub feeding script, and the `sdrmonitor` script is illustrated in the following sequence diagram:
   ![System sequence diagram](./sequence-diagram.png)
 
@@ -50,7 +53,9 @@ The experiment proceeded as follows:
 5. On hardware failure, `sdrmonitor` stops both `dump1090` and the feeding script — ✅ Confirmed.
 6. Verified that `systemd` continues to attempt restarting `dump1090`, but fails due to missing hardware — ✅ Observed.
 7. Upon reconnecting the SDR and antenna, verified that `systemd` successfully restarts `dump1090` and feeding resumes — ✅ Confirmed.
-8. Documented the behavior with a sequence diagram (see Figure 1).
+8. Repeated hardware disconnection and reconnection 50 times — ✅ All cases successfully recovered.
+9. Rebooted Raspberry Pi 50 times — ✅ Only 1 failure due to unrelated OS boot issue.
+10. Documented the behavior with a sequence diagram (see Figure 1).
 
 ## Duration
 Deadline: 2025-06-17 ✅ Met
@@ -59,4 +64,3 @@ Deadline: 2025-06-17 ✅ Met
 - https://github.com/antirez/dump1090
 - https://www.adsbhub.org/howtofeed.php
 - https://github.com/dpmin7/flight-tracker
-
