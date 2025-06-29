@@ -1,5 +1,4 @@
 # Experiment 1: Improving Rendering Performance When Displaying 10,000+ Objects
- 
 
 ## Results and recommendations 
  - An initial analysis showed no significant link between FPS and UI performance.   
@@ -13,7 +12,6 @@
    typical way : 0.211s  
    code base(Immediate Mode) : 0.077s  
    Vertex Buffer Object (VBO) : 0.062s  
-   <s>instanced rendering : -s</s>
 
 ## Objective 
  - Identify and analyze potential performance degradation when rendering more than 10,000 objects on the screen, and assess its impact on overall system behavior.
@@ -46,4 +44,4 @@
  - Deadline: 2025-06-17  
 
 ## Links and references
- - TBD
+N/A

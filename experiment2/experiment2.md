@@ -1,14 +1,14 @@
-# Experiment 2: Tracker, Network Connection Recovery Experiment 
+# Experiment 2: Network Connection Recovery Experiment 
  
 
 ## Results and recommendations 
-- 1. Tried to check if the server is alive using ICMP Request(ping), but the server did't respond. -> we can not use ICMP Request.  
-- 2. Network disconnection and reconnection were detected through TCP connection attempts.  
-     Connectivity with the ADS-B Hub and the local server was verified every 10 seconds using TCP connection attempts.   
-	 (A 10-second interval was used for the ADS-B Hub to prevent potential problems that could arise from frequent TCP connection attempts.)  
-	 For the Raspberry Pi, TCP connection attempts were performed every 2 seconds.  
-- 3. Test for Detecting Internet Disconnection and Reconnection: All 50 out of 50 test attempts were successful.  
-     Test for USB Disconnection between the Raspberry Pi and the SDR: All 50 out of 50 test attempts were successful.  
+- Tried to check if the server is alive using ICMP Request(ping), but the server did't respond. -> we can not use ICMP Request.  
+- Network disconnection and reconnection were detected through TCP connection attempts.  
+  Connectivity with the ADS-B Hub and the local server was verified every 10 seconds using TCP connection attempts.   
+  (A 10-second interval was used for the ADS-B Hub to prevent potential problems that could arise from frequent TCP connection attempts.)  
+  For the Raspberry Pi, TCP connection attempts were performed every 2 seconds.  
+- Test for Detecting Internet Disconnection and Reconnection: All 50 out of 50 test attempts were successful.  
+  Test for USB Disconnection between the Raspberry Pi and the SDR: All 50 out of 50 test attempts were successful.  
 
 ## Objective 
 This experiment aims to verify whether network disconnection can be effectively detected using ping/echo methods and whether the system can recover and return to a normal state within 1 minute after reconnection.
@@ -52,5 +52,5 @@ The results will impact the following design decisions:
 - Day 2: Repeat tests under varying conditions and analyze logs
 
 ## Links and references
-- RFC 792 - ICMP Protocol Specification
+- [RFC 792 - ICMP Protocol Specification](https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol)
 - Linux ping manual

@@ -59,5 +59,4 @@
 - Target end date: 2025-06-17
 
 ## Links and references
-
-- (TBD)
+N/A

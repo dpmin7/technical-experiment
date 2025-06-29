@@ -1,4 +1,4 @@
-# Experiment 4: Operational Load Test for Aircraft CPA Computation
+# Experiment 4: Performance Test for Aircraft CPA Computation
 
 ## Results and Recommendations
 
@@ -98,5 +98,4 @@ Based on these results, explore ways to reduce the computational load and derive
 - Derive and document results by **June 21**
     
 ## Related Links & References
-
-※ Add as needed
+N/A
