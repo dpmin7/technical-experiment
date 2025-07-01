@@ -1,9 +1,9 @@
-# Experiment 5: SDR and antenna connection recovery experiment
+# Experiment 5: SDR connection recovery experiment
 
 ## Results and recommendations
 The experiment has been concluded successfully.
 
-- It was confirmed that when the SDR and antenna are physically connected and functioning properly, the `dump1090` program runs without error and successfully feeds data to ADSBHub.
+- It was confirmed that when the SDR are physically connected and functioning properly, the `dump1090` program runs without error and successfully feeds data to ADSBHub.
 - A `systemd` service unit was created to automatically start both `dump1090` and the ADSBHub feeding script at system boot.
 - It was verified that `dump1090` automatically restarts when it is terminated abnormally (e.g., via kill signal), using `Restart=always` in the service unit configuration.
 - A monitoring script (`sdrmonitor`) was developed to detect whether the SDR is physically connected and functioning.
@@ -52,7 +52,7 @@ The experiment proceeded as follows:
 4. Developed `sdrmonitor` script to detect SDR/antenna hardware connection status — ✅ Implemented.
 5. On hardware failure, `sdrmonitor` stops both `dump1090` and the feeding script — ✅ Confirmed.
 6. Verified that `systemd` continues to attempt restarting `dump1090`, but fails due to missing hardware — ✅ Observed.
-7. Upon reconnecting the SDR and antenna, verified that `systemd` successfully restarts `dump1090` and feeding resumes — ✅ Confirmed.
+7. Upon reconnecting the SDR, verified that `systemd` successfully restarts `dump1090` and feeding resumes — ✅ Confirmed.
 8. Repeated hardware disconnection and reconnection 50 times — ✅ All cases successfully recovered.
 9. Rebooted Raspberry Pi 50 times — ✅ Only 1 failure due to unrelated OS boot issue.
 10. Documented the behavior with a sequence diagram (see Figure 1).

@@ -76,7 +76,7 @@ This repository contains six key experiments conducted to evaluate and improve v
 
 ---
 
-### ✅ Experiment 5: SDR and antenna connection recovery experiment
+### ✅ Experiment 5: SDR connection recovery experiment
 
 - **Goal**:
   Verify automatic detection and recovery from physical disconnection or malfunction of SDR or antenna on a Raspberry Pi system.
